@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: rgb(255, 255, 255);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: rgb(255, 255, 255);
+}
+
+p {
+  margin:0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(93,93,93,1) 100%); 
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.loginWrapper {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+   background: #65868533; 
+  /* border: 1px solid rgb(55, 170, 166); */
+  box-shadow: 0px 0px 100px 50px rgba(55,170,166,0.5);
+  border-radius: 4px;
+  height: fit-content;
+  width: calc(33.3vw);
+  min-width: 300px;
+  padding: 30px 50px 50px 50px;
+}
+
+.logo {
+  width: 150px;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.input {
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  background: #65868533;
+  color: rgb(255, 255, 255);
+  transition: 400ms;
+}
+
+.input:focus {
+  outline: rgb(55, 170, 166);
+  transform: scale(1.05);
+}
+
+.button {
+  border: 1px solid rgb(55, 170, 166);
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  background: rgb(55, 170, 166, 0);
+  color: rgb(55, 170, 166);
+  padding: 15px;
+  transition: 400ms;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.button:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background: rgb(55, 170, 166);
+}
+
+.button:focus {
+  outline: rgb(55, 170, 166);
+  transform: scale(1.05);
+}
+
+.textWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.link {
+  color: rgb(255, 255, 255);
+  transition: 400ms;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(55, 170, 166);
+}
+
+
+
