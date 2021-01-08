@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap'); 
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+
+  ::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgb(255, 255, 255);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: rgb(255, 255, 255);
+  }
+  
+  p {
+    margin:0;
+  }
+  
+  .input {
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    background: #65868533;
+    color: rgb(255, 255, 255);
+    transition: 400ms;
+  }
+  
+  .input:focus {
+    outline: rgb(55, 170, 166);
+    transform: scale(1.03);
+  }
+  
+  .link {
+    color: rgb(255, 255, 255);
+    transition: 400ms;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(55, 170, 166);
+  }
+  
+  .button {
+    border: 1px solid rgb(55, 170, 166);
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    background: rgb(55, 170, 166);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    transition: 400ms;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .button:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+  
+  .button:focus {
+    outline: rgb(55, 170, 166);
+    transform: scale(1.03);
+  }
+

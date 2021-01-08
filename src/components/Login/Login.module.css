@@ -1,92 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-
-* {
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-::placeholder {
-  color: rgb(255, 255, 255);
-  opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: rgb(255, 255, 255);
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
- color: rgb(255, 255, 255);
-}
-
-p {
-  margin:0;
-}
-
 .container {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(93,93,93,1) 100%); 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .loginWrapper {
   background: #65868533; 
   box-shadow: 0px 0px 100px 50px rgba(55,170,166,0.5);
-  border-radius: 4px;
-  height: 412px;
-  width: calc(33.3vw);
-  min-width: 300px;
-  padding: 30px 50px 50px 50px;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mobileDataContainer {
+  align-content: center;
+} 
+
+.desktopDataContainer {
+  display: none;
 }
 
 .logo {
   width: 150px;
-  display: block;
-  margin: auto;
   margin-bottom: 30px;
-}
-
-.input {
-  border: none;
-  border-radius: 3px;
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 7px;
-  background: #65868533;
-  color: rgb(255, 255, 255);
-  transition: 400ms;
-}
-
-.input:focus {
-  outline: rgb(55, 170, 166);
-  transform: scale(1.03);
-}
-
-.button {
-  border: 1px solid rgb(55, 170, 166);
-  border-radius: 3px;
-  width: 100%;
-  padding: 7px;
-  background: rgb(55, 170, 166, 0);
-  color: rgb(55, 170, 166);
-  padding: 15px;
-  transition: 400ms;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.button:hover {
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  background: rgb(55, 170, 166);
-}
-
-.button:focus {
-  outline: rgb(55, 170, 166);
-  transform: scale(1.03);
 }
 
 .textWrapper {
@@ -97,108 +38,64 @@ p {
   margin-top: 30px;
 }
 
-.link {
-  color: rgb(255, 255, 255);
-  transition: 400ms;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.link:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  color: rgb(55, 170, 166);
-}
-
 .dataFirstLine {
   color: rgb(255, 255, 255);
   font-weight: 300;
   font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .dataSecondLine {
   color: rgb(55, 170, 166);
   font-weight: 500;
-  font-size: 40px;
-}
-
-.customModal {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  background: linear-gradient(180deg, #272D2D 0%, #4C5252 100%); 
-  border-radius: 4px;
-  height: fit-content;
-  width: calc(30vw);
-  left: calc(50% - 30vw/2);  
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.customModal:focus {
-  outline: none;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.7);
-}
-
-.closeButtonWrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.closeButton {
-  height: 15px;
-  width: 15px;
-  cursor: pointer;
-  transition: 400ms;
-}
-
-.closeButton:focus {
-  transform: scale(1.2);
-}
-
-.closeButton:hover {
-  transform: scale(1.2);
-}
-
-.modalHeader {
-  font-size: 30px;
-  color: rgb(55, 170, 166);
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0;
-}
-
-.modalInstruction {
-  font-size: 14px;
-  color: rgb(255, 255, 255);
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.modalAssistanceWrapper {
-  margin-top: 30px;
-  width: 100%;
-  height: 100%;
+  font-size: 24px;
   text-align: center;
 }
 
-.modalAssistance {
-  font-size: 14px;
-  color: rgb(255, 255, 255);
-  font-weight: 300;
-}
 
+@media only screen and (min-width: 1100px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(93,93,93,1) 100%); 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 
+  .loginWrapper {
+    background: #65868533; 
+    box-shadow: 0px 0px 100px 50px rgba(55,170,166,0.5);
+    border-radius: 4px;
+    height: 412px;
+    width: calc(33.3vw);
+    min-width: 300px;
+    padding: 30px 50px 50px 50px;
+  }
 
+  .mobileDataContainer {
+    display: none;
+  } 
+  
+  .desktopDataContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dataFirstLine {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .dataSecondLine {
+    color: rgb(55, 170, 166);
+    font-weight: 500;
+    font-size: 40px;
+    text-align: left;
+  }
+} 
