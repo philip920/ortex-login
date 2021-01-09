@@ -1,6 +1,6 @@
 import React from "react";
 import whiteCross from "../../assets/white_cross.svg"
-import styles from "./Modal.module.css";
+import styles from "./modal.module.css";
 import commonStyles from "../Common.module.css"
 import ReactModal from 'react-modal';
 
