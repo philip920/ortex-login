@@ -7,8 +7,8 @@ import {
 } from "react-router-dom";
 import { Login } from './components/Login/Login'
 
+// redirect to /login
 export default function App() {
-  
   return (
     <Router>
       <Switch>
