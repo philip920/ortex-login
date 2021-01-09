@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./login.module.css";
+import styles from "./Login.module.css";
 import commonStyles from "../common.module.css"
 import ortexLogo from "../../assets/ortex_logo_turquoise.svg"
 import { Modal } from "../Modal/Modal"
