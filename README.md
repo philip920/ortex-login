@@ -1,3 +1,7 @@
+A login page I have done as part of my application for a FinTech startup in the UK. Design is by myself. Streams EUR/USD exchange rate from a websocket.
+
+![Bildschirmfoto 2022-04-11 um 16 02 50](https://user-images.githubusercontent.com/48444166/163213145-241337ef-1cc4-47d2-aa95-25a802be6058.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
